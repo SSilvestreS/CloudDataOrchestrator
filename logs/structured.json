@@ -1,0 +1,8 @@
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T22:03:45.768503", "level": "INFO"}
+{"message": "Operação test_operation concluída em 1.000s", "module": "logger", "function": "end_timer", "line": 262, "timestamp": "2025-08-21T22:03:46.769513", "level": "INFO"}
+{"message": "Resumo de Performance:", "module": "logger", "function": "log_metrics_summary", "line": 281, "timestamp": "2025-08-21T22:03:46.769971", "level": "INFO"}
+{"message": "  Total de operações: 1", "module": "logger", "function": "log_metrics_summary", "line": 282, "timestamp": "2025-08-21T22:03:46.770279", "level": "INFO"}
+{"message": "  Operações bem-sucedidas: 1", "module": "logger", "function": "log_metrics_summary", "line": 283, "timestamp": "2025-08-21T22:03:46.774670", "level": "INFO"}
+{"message": "  Taxa de sucesso: 100.0%", "module": "logger", "function": "log_metrics_summary", "line": 284, "timestamp": "2025-08-21T22:03:46.775197", "level": "INFO"}
+{"message": "  Tempo total: 1.000s", "module": "logger", "function": "log_metrics_summary", "line": 285, "timestamp": "2025-08-21T22:03:46.775539", "level": "INFO"}
+{"message": "  Tempo médio: 1.000s", "module": "logger", "function": "log_metrics_summary", "line": 286, "timestamp": "2025-08-21T22:03:46.775847", "level": "INFO"}

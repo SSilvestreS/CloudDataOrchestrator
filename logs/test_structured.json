@@ -1,0 +1,6 @@
+{"message": "Logging estruturado configurado: logs/test_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T22:03:45.765903", "level": "INFO"}
+{"message": "Mensagem de debug", "module": "logger", "function": "main", "line": 300, "timestamp": "2025-08-21T22:03:45.766390", "level": "DEBUG"}
+{"message": "Mensagem de informação", "module": "logger", "function": "main", "line": 301, "timestamp": "2025-08-21T22:03:45.766639", "level": "INFO"}
+{"message": "Mensagem de aviso", "module": "logger", "function": "main", "line": 302, "timestamp": "2025-08-21T22:03:45.766865", "level": "WARNING"}
+{"message": "Mensagem de erro", "module": "logger", "function": "main", "line": 303, "timestamp": "2025-08-21T22:03:45.767186", "level": "ERROR"}
+{"message": "Operação iniciada", "module": "logger", "function": "log_with_context", "line": 197, "timestamp": "2025-08-21T22:03:45.767404", "level": "INFO", "user_id": "123", "operation": "data_collection"}
