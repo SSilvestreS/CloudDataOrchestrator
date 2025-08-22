@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script de Deploy Completo para o Projeto Data Pipeline
+Script de Deploy Completo para o Projeto Cloud Data Orchestrator
 Executa todos os passos necessários para deploy na AWS
 """
 
@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 class DeployManager:
-    """Gerenciador de deploy para o projeto Data Pipeline"""
+    """Gerenciador de deploy para o projeto Cloud Data Orchestrator"""
     
     def __init__(self):
         self.project_root = Path(__file__).parent
@@ -252,7 +252,7 @@ class DeployManager:
     
     def deploy(self, skip_infrastructure=False, skip_lambda=False):
         """Executa o deploy completo"""
-        print("🚀 Iniciando deploy completo do projeto Data Pipeline...")
+        print("🚀 Iniciando deploy completo do projeto Cloud Data Orchestrator...")
         print("=" * 60)
         
         # Verificar pré-requisitos
@@ -302,7 +302,7 @@ def main():
     """Função principal"""
     import argparse
     
-    parser = argparse.ArgumentParser(description="Deploy do Projeto Data Pipeline")
+    parser = argparse.ArgumentParser(description="Deploy do Projeto Cloud Data Orchestrator")
     parser.add_argument("--skip-infrastructure", action="store_true", 
                        help="Pular deploy da infraestrutura")
     parser.add_argument("--skip-lambda", action="store_true", 

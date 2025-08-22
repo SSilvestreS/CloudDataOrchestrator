@@ -1,0 +1,26 @@
+{
+  "file_structure": {
+    "total_required": 12,
+    "existing": 12,
+    "missing": 0,
+    "missing_files": [],
+    "coverage": "100.0%"
+  },
+  "dependencies": {
+    "total_required": 8,
+    "found": 8,
+    "missing": 0,
+    "missing_packages": [],
+    "coverage": "100.0%"
+  },
+  "git_status": {
+    "is_repo": true,
+    "current_branch": "master",
+    "has_changes": true,
+    "remote_url": "origin\thttps://github.com/SSilvestreS/CloudDataOrchestrator.git (fetch)\norigin\thttps://github.com/SSilvestreS/CloudDataOrchestrator.git (push)"
+  },
+  "docker": {
+    "docker_installed": true,
+    "compose_installed": true
+  }
+}
