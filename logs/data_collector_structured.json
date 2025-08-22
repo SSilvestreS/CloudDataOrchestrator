@@ -36,3 +36,5 @@
 {"message": "Coleta de clima concluída: 3 cidades", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 79, "timestamp": "2025-08-21T23:24:04.232617", "level": "INFO"}
 {"message": "🎉 Coleta completa concluída em 3.01s", "module": "data_collector_enhanced", "function": "run_collection", "line": 142, "timestamp": "2025-08-21T23:24:04.235786", "level": "INFO"}
 {"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:24:04.288542", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/data_collector_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:26:02.515364", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:26:02.516224", "level": "INFO"}
