@@ -1,0 +1,8 @@
+boto3==1.34.0
+requests==2.31.0
+pandas==2.1.0
+python-dotenv==1.0.0
+schedule==1.2.0
+PyGithub==1.59.0
+openweathermap==0.1.0
+exchangerate==0.1.0

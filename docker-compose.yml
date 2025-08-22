@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  # Dashboard Streamlit
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - DYNAMODB_TABLE=${DYNAMODB_TABLE}
+    volumes:
+      - .:/app
+    depends_on:
+      - data-pipeline
+    restart: unless-stopped
+
+  # Data Pipeline
+  data-pipeline:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python data_pipeline/data_collector.py
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - DYNAMODB_TABLE=${DYNAMODB_TABLE}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  # Scheduler para execução periódica
+  scheduler:
+    image: mcuadros/ofelia:latest
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - ./docker/scheduler.ini:/etc/ofelia/config.ini
+    restart: unless-stopped
+
+networks:
+  default:
+    name: data-pipeline-network
