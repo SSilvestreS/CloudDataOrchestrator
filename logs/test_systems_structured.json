@@ -8,3 +8,8 @@
 {"message": "Mensagem de informação", "module": "test_all_systems", "function": "test_logging_system", "line": 62, "timestamp": "2025-08-21T23:24:00.525962", "level": "INFO"}
 {"message": "Mensagem de aviso", "module": "test_all_systems", "function": "test_logging_system", "line": 63, "timestamp": "2025-08-21T23:24:00.526608", "level": "WARNING"}
 {"message": "Mensagem de erro", "module": "test_all_systems", "function": "test_logging_system", "line": 64, "timestamp": "2025-08-21T23:24:00.529794", "level": "ERROR"}
+{"message": "Logging estruturado configurado: logs/test_systems_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:29:53.795617", "level": "INFO"}
+{"message": "Mensagem de debug", "module": "test_all_systems", "function": "test_logging_system", "line": 61, "timestamp": "2025-08-21T23:29:53.805765", "level": "DEBUG"}
+{"message": "Mensagem de informação", "module": "test_all_systems", "function": "test_logging_system", "line": 62, "timestamp": "2025-08-21T23:29:53.807267", "level": "INFO"}
+{"message": "Mensagem de aviso", "module": "test_all_systems", "function": "test_logging_system", "line": 63, "timestamp": "2025-08-21T23:29:53.809645", "level": "WARNING"}
+{"message": "Mensagem de erro", "module": "test_all_systems", "function": "test_logging_system", "line": 64, "timestamp": "2025-08-21T23:29:53.810201", "level": "ERROR"}

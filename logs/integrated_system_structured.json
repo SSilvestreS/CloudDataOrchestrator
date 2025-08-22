@@ -20,3 +20,6 @@
 {"message": "Logging estruturado configurado: logs/integrated_system_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:26:02.508034", "level": "INFO"}
 {"message": "Sistema integrado inicializado com sucesso", "module": "integrated_system", "function": "__init__", "line": 60, "timestamp": "2025-08-21T23:26:02.516722", "level": "INFO"}
 {"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 236, "timestamp": "2025-08-21T23:26:02.579201", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/integrated_system_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:29:57.707816", "level": "INFO"}
+{"message": "Sistema integrado inicializado com sucesso", "module": "integrated_system", "function": "__init__", "line": 60, "timestamp": "2025-08-21T23:29:57.749388", "level": "INFO"}
+{"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 236, "timestamp": "2025-08-21T23:29:57.749787", "level": "INFO"}

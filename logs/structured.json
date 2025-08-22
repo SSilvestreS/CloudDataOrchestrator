@@ -15,3 +15,6 @@
 {"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:24:00.532066", "level": "INFO"}
 {"message": "test_function executado em 0.10s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:24:00.633721", "level": "INFO"}
 {"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:24:04.233646", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:29:53.813618", "level": "INFO"}
+{"message": "test_function executado em 0.10s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:29:53.918524", "level": "INFO"}
+{"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:29:57.695653", "level": "INFO"}
