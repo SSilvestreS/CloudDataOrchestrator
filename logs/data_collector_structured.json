@@ -1,0 +1,38 @@
+{"message": "Logging estruturado configurado: logs/data_collector_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:30.862289", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:23:30.863559", "level": "INFO"}
+{"message": "🚀 Iniciando coleta completa de dados", "module": "data_collector_enhanced", "function": "run_collection", "line": 119, "timestamp": "2025-08-21T23:23:30.864504", "level": "INFO"}
+{"message": "Iniciando coleta de dados de clima", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 46, "timestamp": "2025-08-21T23:23:30.865525", "level": "INFO"}
+{"message": "API key inválida para São Paulo, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:30.866674", "level": "WARNING"}
+{"message": "Dados coletados para São Paulo", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:30.867798", "level": "INFO"}
+{"message": "API key inválida para Rio de Janeiro, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:31.869834", "level": "WARNING"}
+{"message": "Dados coletados para Rio de Janeiro", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:31.871192", "level": "INFO"}
+{"message": "API key inválida para Brasília, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:32.872471", "level": "WARNING"}
+{"message": "Dados coletados para Brasília", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:32.874067", "level": "INFO"}
+{"message": "Coleta de clima concluída: 3 cidades", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 79, "timestamp": "2025-08-21T23:23:33.876357", "level": "INFO"}
+{"message": "🎉 Coleta completa concluída em 3.01s", "module": "data_collector_enhanced", "function": "run_collection", "line": 142, "timestamp": "2025-08-21T23:23:33.878149", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:23:33.937738", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/data_collector_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:50.695883", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:23:50.696223", "level": "INFO"}
+{"message": "🚀 Iniciando coleta completa de dados", "module": "data_collector_enhanced", "function": "run_collection", "line": 119, "timestamp": "2025-08-21T23:23:50.700209", "level": "INFO"}
+{"message": "Iniciando coleta de dados de clima", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 46, "timestamp": "2025-08-21T23:23:50.703055", "level": "INFO"}
+{"message": "API key inválida para São Paulo, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:50.703691", "level": "WARNING"}
+{"message": "Dados coletados para São Paulo", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:50.704203", "level": "INFO"}
+{"message": "API key inválida para Rio de Janeiro, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:51.705119", "level": "WARNING"}
+{"message": "Dados coletados para Rio de Janeiro", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:51.707452", "level": "INFO"}
+{"message": "API key inválida para Brasília, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:23:52.708646", "level": "WARNING"}
+{"message": "Dados coletados para Brasília", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:23:52.710661", "level": "INFO"}
+{"message": "Coleta de clima concluída: 3 cidades", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 79, "timestamp": "2025-08-21T23:23:53.712054", "level": "INFO"}
+{"message": "🎉 Coleta completa concluída em 3.01s", "module": "data_collector_enhanced", "function": "run_collection", "line": 142, "timestamp": "2025-08-21T23:23:53.713896", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/data_collector_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:24:01.221549", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:24:01.223652", "level": "INFO"}
+{"message": "🚀 Iniciando coleta completa de dados", "module": "data_collector_enhanced", "function": "run_collection", "line": 119, "timestamp": "2025-08-21T23:24:01.226326", "level": "INFO"}
+{"message": "Iniciando coleta de dados de clima", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 46, "timestamp": "2025-08-21T23:24:01.227115", "level": "INFO"}
+{"message": "API key inválida para São Paulo, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:24:01.227528", "level": "WARNING"}
+{"message": "Dados coletados para São Paulo", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:24:01.227902", "level": "INFO"}
+{"message": "API key inválida para Rio de Janeiro, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:24:02.228445", "level": "WARNING"}
+{"message": "Dados coletados para Rio de Janeiro", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:24:02.229181", "level": "INFO"}
+{"message": "API key inválida para Brasília, usando dados simulados", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 58, "timestamp": "2025-08-21T23:24:03.230640", "level": "WARNING"}
+{"message": "Dados coletados para Brasília", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 67, "timestamp": "2025-08-21T23:24:03.231755", "level": "INFO"}
+{"message": "Coleta de clima concluída: 3 cidades", "module": "data_collector_enhanced", "function": "collect_weather_data", "line": 79, "timestamp": "2025-08-21T23:24:04.232617", "level": "INFO"}
+{"message": "🎉 Coleta completa concluída em 3.01s", "module": "data_collector_enhanced", "function": "run_collection", "line": 142, "timestamp": "2025-08-21T23:24:04.235786", "level": "INFO"}
+{"message": "Data Collector inicializado com sucesso", "module": "data_collector_enhanced", "function": "__init__", "line": 41, "timestamp": "2025-08-21T23:24:04.288542", "level": "INFO"}

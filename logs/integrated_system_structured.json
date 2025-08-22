@@ -1,0 +1,19 @@
+{"message": "Logging estruturado configurado: logs/integrated_system_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:33.903699", "level": "INFO"}
+{"message": "Sistema integrado inicializado com sucesso", "module": "integrated_system", "function": "__init__", "line": 60, "timestamp": "2025-08-21T23:23:33.938429", "level": "INFO"}
+{"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 237, "timestamp": "2025-08-21T23:23:33.939160", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/integrated_system_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:50.691621", "level": "INFO"}
+{"message": "Sistema integrado inicializado com sucesso", "module": "integrated_system", "function": "__init__", "line": 60, "timestamp": "2025-08-21T23:23:50.696479", "level": "INFO"}
+{"message": "🔄 Iniciando pipeline de coleta de dados", "module": "integrated_system", "function": "run_data_collection_pipeline", "line": 115, "timestamp": "2025-08-21T23:23:50.698939", "level": "INFO"}
+{"message": "🔍 Validando dados coletados", "module": "integrated_system", "function": "_validate_collected_data", "line": 164, "timestamp": "2025-08-21T23:23:53.714472", "level": "INFO"}
+{"message": "✅ Validação concluída: 1 tipos de dados processados", "module": "integrated_system", "function": "_validate_collected_data", "line": 200, "timestamp": "2025-08-21T23:23:53.715195", "level": "INFO"}
+{"message": "💾 Dados armazenados em cache: 1 tipos", "module": "integrated_system", "function": "_cache_collected_data", "line": 214, "timestamp": "2025-08-21T23:23:53.720011", "level": "INFO"}
+{"message": "✅ Pipeline concluído em 3.02s", "module": "integrated_system", "function": "run_data_collection_pipeline", "line": 139, "timestamp": "2025-08-21T23:23:53.722935", "level": "INFO"}
+{"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 236, "timestamp": "2025-08-21T23:23:53.727000", "level": "INFO"}
+{"message": "🔧 Executando manutenção do sistema", "module": "integrated_system", "function": "run_maintenance", "line": 277, "timestamp": "2025-08-21T23:23:53.736540", "level": "INFO"}
+{"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 236, "timestamp": "2025-08-21T23:23:53.738775", "level": "INFO"}
+{"message": "🧹 Limpando dados mais antigos que 24h", "module": "integrated_system", "function": "cleanup_old_data", "line": 249, "timestamp": "2025-08-21T23:23:53.739725", "level": "INFO"}
+{"message": "✅ Limpeza concluída: {'metrics_cleaned': 0, 'cache_cleaned': 0, 'logs_cleaned': 0, 'timestamp': '2025-08-21T23:23:53.740499'}", "module": "integrated_system", "function": "cleanup_old_data", "line": 268, "timestamp": "2025-08-21T23:23:53.740555", "level": "INFO"}
+{"message": "✅ Manutenção concluída", "module": "integrated_system", "function": "run_maintenance", "line": 294, "timestamp": "2025-08-21T23:23:53.741418", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/integrated_system_structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:24:04.256752", "level": "INFO"}
+{"message": "Sistema integrado inicializado com sucesso", "module": "integrated_system", "function": "__init__", "line": 60, "timestamp": "2025-08-21T23:24:04.289124", "level": "INFO"}
+{"message": "🏥 Executando verificação de saúde do sistema", "module": "integrated_system", "function": "run_health_check", "line": 236, "timestamp": "2025-08-21T23:24:04.289684", "level": "INFO"}

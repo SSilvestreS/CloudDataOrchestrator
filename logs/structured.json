@@ -6,3 +6,12 @@
 {"message": "  Taxa de sucesso: 100.0%", "module": "logger", "function": "log_metrics_summary", "line": 284, "timestamp": "2025-08-21T22:03:46.775197", "level": "INFO"}
 {"message": "  Tempo total: 1.000s", "module": "logger", "function": "log_metrics_summary", "line": 285, "timestamp": "2025-08-21T22:03:46.775539", "level": "INFO"}
 {"message": "  Tempo médio: 1.000s", "module": "logger", "function": "log_metrics_summary", "line": 286, "timestamp": "2025-08-21T22:03:46.775847", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:29.976559", "level": "INFO"}
+{"message": "test_function executado em 0.10s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:23:30.078644", "level": "INFO"}
+{"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:23:33.877614", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:23:50.697984", "level": "INFO"}
+{"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:23:53.713366", "level": "INFO"}
+{"message": "run_data_collection_pipeline executado em 3.03s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:23:53.725082", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:24:00.532066", "level": "INFO"}
+{"message": "test_function executado em 0.10s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:24:00.633721", "level": "INFO"}
+{"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:24:04.233646", "level": "INFO"}
