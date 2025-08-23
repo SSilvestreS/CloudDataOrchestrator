@@ -10,17 +10,16 @@ RUN apt-get update && apt-get install -y \
     g++ \
     libblas-dev \
     liblapack-dev \
-    libatlas-base-dev \
     gfortran \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copiar arquivos de dependências
 COPY requirements.txt .
-COPY lambda/requirements.txt ./lambda_requirements.txt
 
 # Instalar dependências Python
-RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir -r lambda_requirements.txt
+RUN pip install --no-cache-dir --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
 
 # Criar diretórios necessários
 RUN mkdir -p models logs cache
