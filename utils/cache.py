@@ -277,6 +277,45 @@ class CacheDecorator:
         
         return wrapper
 
+class Cache:
+    """Classe Cache simples para compatibilidade com sistema v2"""
+    
+    def __init__(self):
+        self.memory_cache = MemoryCache()
+        self.persistent_cache = PersistentCache()
+    
+    def get(self, key: str, default=None):
+        """Obtém valor do cache"""
+        # Tentar memória primeiro
+        value = self.memory_cache.get(key)
+        if value is not None:
+            return value
+        
+        # Tentar persistente
+        return self.persistent_cache.get(key, default)
+    
+    def set(self, key: str, value: Any, ttl: int = None):
+        """Define valor no cache"""
+        self.memory_cache.set(key, value, ttl)
+        self.persistent_cache.set(key, value, ttl)
+    
+    def delete(self, key: str):
+        """Remove valor do cache"""
+        self.memory_cache.delete(key)
+        self.persistent_cache.delete(key)
+    
+    def clear(self):
+        """Limpa todo o cache"""
+        self.memory_cache.clear()
+        self.persistent_cache.clear()
+    
+    def get_stats(self):
+        """Retorna estatísticas do cache"""
+        return {
+            "memory": self.memory_cache.get_stats(),
+            "persistent": self.persistent_cache.get_stats()
+        }
+
 def main():
     """Função principal para teste"""
     print("🧪 Testando sistema de cache...")

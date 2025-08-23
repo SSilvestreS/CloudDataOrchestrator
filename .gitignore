@@ -157,3 +157,9 @@ Thumbs.db
 test_output_*.json
 *.zip
 deploy_*.log
+
+# CloudDataOrchestrator specific
+models/
+logs/
+cache/
+deploy_report.json

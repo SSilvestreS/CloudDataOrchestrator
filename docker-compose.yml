@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  # Dashboard Streamlit
+  # Dashboard Streamlit Avançado
   dashboard:
     build:
       context: .
@@ -13,13 +13,26 @@ services:
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
       - DYNAMODB_TABLE=${DYNAMODB_TABLE}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - NEWSAPI_API_KEY=${NEWSAPI_API_KEY}
+      - COINAPI_API_KEY=${COINAPI_API_KEY}
+      - TWITTER_BEARER_TOKEN=${TWITTER_BEARER_TOKEN}
     volumes:
       - .:/app
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./cache:/app/cache
     depends_on:
       - data-pipeline
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
-  # Data Pipeline
+  # Data Pipeline com ML
   data-pipeline:
     build:
       context: .
@@ -30,9 +43,49 @@ services:
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
       - DYNAMODB_TABLE=${DYNAMODB_TABLE}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY}
       - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - NEWSAPI_API_KEY=${NEWSAPI_API_KEY}
+      - COINAPI_API_KEY=${COINAPI_API_KEY}
+      - TWITTER_BEARER_TOKEN=${TWITTER_BEARER_TOKEN}
     volumes:
       - .:/app
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Sistema de Alertas
+  alerts:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python -c "from utils.alerts import create_alert_manager; import time; manager = create_alert_manager(); print('Sistema de alertas ativo'); time.sleep(86400)"
+    environment:
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    restart: unless-stopped
+
+  # Sistema de ML
+  ml-service:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python -c "from utils.anomaly_detector import create_anomaly_detector; import time; detector = create_anomaly_detector(); print('Sistema de ML ativo'); time.sleep(86400)"
+    volumes:
+      - .:/app
+      - ./models:/app/models
+      - ./logs:/app/logs
     restart: unless-stopped
 
   # Scheduler para execução periódica
@@ -46,4 +99,4 @@ services:
 
 networks:
   default:
-    name: data-pipeline-network
+    name: clouddataorchestrator-network

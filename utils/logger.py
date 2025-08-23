@@ -317,3 +317,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Função global para compatibilidade
+def get_logger(name: str = None) -> logging.Logger:
+    """Função global para obter um logger configurado"""
+    log_manager = LogManager()
+    return log_manager.get_logger(name)
+
+# Instância global para uso direto
+default_logger = LogManager().get_logger()

@@ -18,3 +18,7 @@
 {"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-21T23:29:53.813618", "level": "INFO"}
 {"message": "test_function executado em 0.10s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:29:53.918524", "level": "INFO"}
 {"message": "collect_weather_data executado em 3.01s", "module": "logger", "function": "wrapper", "line": 230, "timestamp": "2025-08-21T23:29:57.695653", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-23T19:14:26.310905", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-23T19:19:55.112087", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-23T19:22:03.118907", "level": "INFO"}
+{"message": "Logging estruturado configurado: logs/structured.json", "module": "logger", "function": "_setup_structured_handler", "line": 167, "timestamp": "2025-08-23T19:32:25.924243", "level": "INFO"}
