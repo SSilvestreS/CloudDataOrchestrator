@@ -50,19 +50,13 @@ jobs:
     
     - name: 🔍 Lint with flake8
       run: |
+        pip install flake8
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     
     - name: 🧪 Run tests
       run: |
         python -m pytest tests/ -v --cov=. --cov-report=xml --cov-report=html
-    
-    - name: 📊 Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        file: ./coverage.xml
-        flags: unittests
-        name: codecov-umbrella
 
   # =============================================================================
   # BUILD E PUSH DE IMAGENS DOCKER
@@ -251,7 +245,6 @@ jobs:
       if: success()
       run: |
         echo "🎉 CloudDataOrchestrator v2.0 deployed to production successfully!"
-        # Aqui você pode adicionar notificações (Slack, Teams, etc.)
 
   # =============================================================================
   # ROLLBACK EM CASO DE FALHA
@@ -299,7 +292,6 @@ jobs:
     - name: 📢 Notify Rollback
       run: |
         echo "🔄 Rollback completed due to deployment failure"
-        # Adicionar notificações de rollback
 
   # =============================================================================
   # LIMPEZA E OTIMIZAÇÃO
@@ -314,4 +306,3 @@ jobs:
     - name: 🧹 Cleanup old images
       run: |
         echo "🧹 Cleaning up old container images..."
-        # Implementar limpeza de imagens antigas no registry
