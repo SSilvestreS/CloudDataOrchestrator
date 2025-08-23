@@ -88,6 +88,47 @@ services:
       - ./logs:/app/logs
     restart: unless-stopped
 
+  # API REST
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    command: python run_api.py
+    ports:
+      - "8000:8000"
+    environment:
+      - API_TOKEN=${API_TOKEN:-clouddataorchestrator-api-key}
+      - API_HOST=0.0.0.0
+      - API_PORT=8000
+      - LOG_LEVEL=INFO
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+      - DYNAMODB_TABLE=${DYNAMODB_TABLE}
+      - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY}
+      - OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY}
+      - NEWSAPI_API_KEY=${NEWSAPI_API_KEY}
+      - COINAPI_API_KEY=${COINAPI_API_KEY}
+      - TWITTER_BEARER_TOKEN=${TWITTER_BEARER_TOKEN}
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_USERNAME=${SMTP_USERNAME}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SLACK_WEBHOOK_URL=${SLACK_WEBHOOK_URL}
+    volumes:
+      - .:/app
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./cache:/app/cache
+    depends_on:
+      - dashboard
+      - data-pipeline
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
   # Scheduler para execução periódica
   scheduler:
     image: mcuadros/ofelia:latest
