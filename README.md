@@ -1,38 +1,40 @@
-# 🚀 Cloud Data Orchestrator
+## Cloud Data Orchestrator
+
+[![Status](https://img.shields.io/badge/Status-Completo-green)](https://github.com/SSilvestreS/NexusPM)
 
 Sistema avançado e robusto para orquestração de dados em nuvem, implementando padrões de resiliência, monitoramento e qualidade de dados.
 
-## ✨ **Características Principais**
+##  **Características Principais**
 
-- 🔧 **Sistema de Configuração Avançado** - Gerenciamento centralizado e validação automática
-- 📝 **Logging Estruturado** - Logs coloridos para console e estruturados em JSON
-- 📊 **Métricas e Monitoramento** - Coleta em tempo real com análise estatística
-- 💾 **Cache Inteligente** - Cache em memória e persistente com TTL
-- 🔍 **Validação de Dados** - Regras configuráveis e score de qualidade
-- 🛡️ **Sistema de Resiliência** - Circuit breaker, retry e fallback patterns
-- 🔄 **Pipeline de Dados** - Coleta, validação e armazenamento automatizado
-- 🏥 **Health Checks** - Monitoramento de saúde do sistema
-- 🖥️ **Dashboard de Monitoramento** - Interface interativa para acompanhamento
-- 🧪 **Testes Automatizados** - Suite completa de validação
+-  **Sistema de Configuração Avançado** - Gerenciamento centralizado e validação automática
+-  **Logging Estruturado** - Logs coloridos para console e estruturados em JSON
+-  **Métricas e Monitoramento** - Coleta em tempo real com análise estatística
+-  **Cache Inteligente** - Cache em memória e persistente com TTL
+-  **Validação de Dados** - Regras configuráveis e score de qualidade
+-  **Sistema de Resiliência** - Circuit breaker, retry e fallback patterns
+-  **Pipeline de Dados** - Coleta, validação e armazenamento automatizado
+-  **Health Checks** - Monitoramento de saúde do sistema
+-  **Dashboard de Monitoramento** - Interface interativa para acompanhamento
+-  **Testes Automatizados** - Suite completa de validação
 
-## 🏗️ **Arquitetura do Sistema**
+##  **Arquitetura do Sistema**
 
 ```
 Cloud Data Orchestrator
-├── 📋 config/                    # Sistema de configuração
-├── 🔧 utils/                     # Utilitários do sistema
+├──  config/                    # Sistema de configuração
+├──  utils/                     # Utilitários do sistema
 │   ├── logger.py                 # Sistema de logging
 │   ├── metrics.py                # Coleta de métricas
 │   ├── cache.py                  # Sistema de cache
 │   ├── validator.py              # Validação de dados
 │   └── resilience.py             # Padrões de resiliência
-├── 🔄 data_pipeline/             # Pipeline de dados
-├── 🚀 integrated_system.py       # Sistema integrado
-├── 🖥️ monitor_dashboard.py       # Dashboard de monitoramento
-└── 🧪 test_all_systems.py        # Testes automatizados
+├──  data_pipeline/             # Pipeline de dados
+├──  integrated_system.py       # Sistema integrado
+├──  monitor_dashboard.py       # Dashboard de monitoramento
+└──  test_all_systems.py        # Testes automatizados
 ```
 
-## 🚀 **Instalação e Configuração**
+##  **Instalação e Configuração**
 
 ### **Pré-requisitos**
 - Python 3.8+
@@ -52,7 +54,7 @@ pip install -r requirements.txt
 python test_all_systems.py
 ```
 
-## 📊 **Sistemas Implementados**
+##  **Sistemas Implementados**
 
 ### **1. Sistema de Configuração (`config/settings.py`)**
 - Gerenciamento centralizado de configurações
@@ -156,7 +158,7 @@ python test_all_systems.py
 - CI/CD com GitHub Actions
 - Ambientes staging e production
 
-## 🧪 **Testes e Validação**
+##  **Testes e Validação**
 
 ### **Executar Todos os Testes**
 ```bash
@@ -172,9 +174,9 @@ python integrated_system.py    # Teste do sistema integrado
 ```
 
 ### **Status dos Testes**
-✅ **8/8 testes passando** - Sistema completamente validado!
+ **8/8 testes passando** - Sistema completamente validado!
 
-## 🖥️ **Dashboard de Monitoramento**
+##  **Dashboard de Monitoramento**
 
 ### **Iniciar Dashboard**
 ```bash
@@ -182,14 +184,14 @@ python monitor_dashboard.py
 ```
 
 ### **Funcionalidades do Dashboard**
-- 📊 **Status de Saúde** - Monitoramento em tempo real
-- 📈 **Métricas do Sistema** - Visualização de performance
-- 🛡️ **Status de Resiliência** - Circuit breakers e retry handlers
-- ⚙️ **Configurações** - Resumo das configurações ativas
-- 🕒 **Atividade Recente** - Dados coletados e processados
-- 🎯 **Ações Interativas** - Executar pipeline, manutenção, etc.
+-  **Status de Saúde** - Monitoramento em tempo real
+-  **Métricas do Sistema** - Visualização de performance
+-  **Status de Resiliência** - Circuit breakers e retry handlers
+-  **Configurações** - Resumo das configurações ativas
+-  **Atividade Recente** - Dados coletados e processados
+-  **Ações Interativas** - Executar pipeline, manutenção, etc.
 
-## 📈 **Monitoramento e Métricas**
+##  **Monitoramento e Métricas**
 
 ### **Métricas Coletadas**
 - Tempo de execução de operações
@@ -204,7 +206,7 @@ python monitor_dashboard.py
 - Disponibilidade de métricas
 - Estado dos circuit breakers
 
-## 🔧 **Manutenção e Operações**
+##  **Manutenção e Operações**
 
 ### **Funcionalidades Automáticas**
 - Limpeza de dados antigos
@@ -224,7 +226,7 @@ python integrated_system.py
 # (automático via sistema integrado)
 ```
 
-## 🚀 **Uso em Produção**
+##  **Uso em Produção**
 
 ### **Configurações Recomendadas**
 - Ajustar TTLs de cache conforme necessidade
@@ -238,7 +240,7 @@ python integrated_system.py
 - Acompanhar qualidade dos dados
 - Verificar performance do cache
 
-## 📝 **Logs e Debugging**
+##  **Logs e Debugging**
 
 ### **Níveis de Log**
 - `DEBUG`: Informações detalhadas para debugging
@@ -264,7 +266,7 @@ cache/
 └── cache_data.pkl
 ```
 
-## 🎯 **Casos de Uso**
+##  **Casos de Uso**
 
 ### **1. Coleta Automática de Dados**
 - Execução de pipeline com resiliência
@@ -290,7 +292,7 @@ cache/
 - Cache persistente
 - Logs estruturados
 
-## 🤝 **Contribuição**
+##  **Contribuição**
 
 ### **Como Contribuir**
 1. Fork o projeto
@@ -310,27 +312,27 @@ cache/
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
-## 🎯 **Roadmap Futuro - 100% COMPLETO! 🎉**
+##  **Roadmap Futuro - 100% COMPLETO! 🎉**
 
-- [x] ✅ Sistema de configuração avançado
-- [x] ✅ Sistema de logging estruturado
-- [x] ✅ Sistema de métricas e monitoramento
-- [x] ✅ Sistema de cache inteligente
-- [x] ✅ Sistema de validação de dados
-- [x] ✅ Sistema de resiliência
-- [x] ✅ Pipeline de dados integrado
-- [x] ✅ Dashboard de monitoramento
-- [x] ✅ Testes automatizados completos
-- [x] 🌐 Interface web para monitoramento (Streamlit Avançado)
-- [x] 🔌 Integração com mais provedores de dados (APIs Múltiplas)
-- [x] 🚨 Sistema de alertas avançado (Email, Slack, Webhook)
-- [x] 🤖 Machine Learning para detecção de anomalias (8 algoritmos)
-- [x] 📊 Dashboard de métricas em tempo real (Plotly)
-- [x] 🐳 Containerização com Docker (Multi-serviços)
-- [x] 📡 API REST para integração externa (FastAPI + 20+ endpoints)
-- [x] ☁️ Deploy automatizado na nuvem (AWS + Terraform + CI/CD)
+- [x]  Sistema de configuração avançado
+- [x]  Sistema de logging estruturado
+- [x]  Sistema de métricas e monitoramento
+- [x]  Sistema de cache inteligente
+- [x]  Sistema de validação de dados
+- [x]  Sistema de resiliência
+- [x]  Pipeline de dados integrado
+- [x]  Dashboard de monitoramento
+- [x]  Testes automatizados completos
+- [x]  Interface web para monitoramento (Streamlit Avançado)
+- [x]  Integração com mais provedores de dados (APIs Múltiplas)
+- [x]  Sistema de alertas avançado (Email, Slack, Webhook)
+- [x]  Machine Learning para detecção de anomalias (8 algoritmos)
+- [x]  Dashboard de métricas em tempo real (Plotly)
+- [x]  Containerização com Docker (Multi-serviços)
+- [x]  API REST para integração externa (FastAPI + 20+ endpoints)
+- [x]  Deploy automatizado na nuvem (AWS + Terraform + CI/CD)
 
-## 📞 **Suporte e Troubleshooting**
+##  **Suporte e Troubleshooting**
 
 ### **Problemas Comuns**
 1. **Erro de importação**: Verificar se todas as dependências estão instaladas
@@ -355,9 +357,9 @@ python integrated_system.py
 python monitor_dashboard.py
 ```
 
-## 🏆 **Status do Projeto**
+##  **Status do Projeto**
 
-### **✅ Implementado e Testado**
+### ** Implementado e Testado**
 - **17 sistemas principais** funcionando perfeitamente
 - **100% dos testes passando** (17/17)
 - **Dashboard avançado** com Streamlit e Plotly
@@ -372,9 +374,9 @@ python monitor_dashboard.py
 
 ---
 
-**🚀 Sistema funcionando perfeitamente com 17/17 funcionalidades implementadas!**
+** Sistema funcionando perfeitamente com 17/17 funcionalidades implementadas!**
 
-**📅 Última atualização**: Agosto 2025  
-**🔢 Versão**: 3.0.0  
-**📊 Status**: ✅ 100% COMPLETO  
-**🏆 Roadmap**: 17/17 funcionalidades (100%) ✅  
+** Última atualização**: Agosto 2025  
+** Versão**: 3.0.0  
+** Status**:  100% COMPLETO  
+** Roadmap**: 17/17 funcionalidades (100%)   
